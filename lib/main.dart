@@ -207,7 +207,7 @@ class _KhazimBoxHomePageState extends State<KhazimBoxHomePage>
                             textDirection: TextDirection.rtl,
                             child: SliderTheme(
                               data: SliderTheme.of(context).copyWith(
-                                thumbShape: RectangularThumb(
+                                thumbShape: SquareThumb(
                                     thumbPosition: ThumbPosition.up),
                                 showValueIndicator: ShowValueIndicator.always,
                                 activeTrackColor: Colors.transparent,
@@ -242,7 +242,7 @@ class _KhazimBoxHomePageState extends State<KhazimBoxHomePage>
                             textDirection: TextDirection.rtl,
                             child: SliderTheme(
                               data: SliderTheme.of(context).copyWith(
-                                thumbShape: RectangularThumb(
+                                thumbShape: SquareThumb(
                                     thumbPosition: ThumbPosition.down),
                                 showValueIndicator: ShowValueIndicator.always,
                                 activeTrackColor: Colors.transparent,
@@ -275,7 +275,7 @@ class _KhazimBoxHomePageState extends State<KhazimBoxHomePage>
                             quarterTurns: 3,
                             child: SliderTheme(
                               data: SliderTheme.of(context).copyWith(
-                                thumbShape: RectangularThumb(
+                                thumbShape: SquareThumb(
                                     thumbPosition: ThumbPosition.right),
                                 showValueIndicator: ShowValueIndicator.always,
                                 activeTrackColor: Colors.transparent,
@@ -308,7 +308,7 @@ class _KhazimBoxHomePageState extends State<KhazimBoxHomePage>
                             quarterTurns: 3,
                             child: SliderTheme(
                               data: SliderTheme.of(context).copyWith(
-                                thumbShape: RectangularThumb(
+                                thumbShape: SquareThumb(
                                     thumbPosition: ThumbPosition.left),
                                 showValueIndicator: ShowValueIndicator.always,
                                 activeTrackColor: Colors.transparent,
@@ -556,10 +556,10 @@ class CanvasPainter extends CustomPainter {
 
 enum ThumbPosition { up, down, left, right }
 
-class RectangularThumb extends SliderComponentShape {
+class SquareThumb extends SliderComponentShape {
   final ThumbPosition thumbPosition;
 
-  RectangularThumb({required this.thumbPosition});
+  SquareThumb({required this.thumbPosition});
 
   @override
   Size getPreferredSize(bool isEnabled, bool isDiscrete) {
