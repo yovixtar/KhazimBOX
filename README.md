@@ -27,7 +27,7 @@ Before running the application, ensure you have:
    Open your terminal and run:
 
    ```bash
-   git clone https://github.com/username/khazimbox.git
+   git clone https://github.com/yovixtar/KhazimBOX.git
    ```
 2. **Navigate to Project Directory:**
    Change into the project directory:
